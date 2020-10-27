@@ -13,6 +13,13 @@
 		F816E67D2545D944004214D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F816E67B2545D944004214D4 /* Main.storyboard */; };
 		F816E67F2545D945004214D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F816E67E2545D945004214D4 /* Assets.xcassets */; };
 		F816E6822545D945004214D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F816E6802545D945004214D4 /* LaunchScreen.storyboard */; };
+		F816E68B2545D967004214D4 /* CoffeeMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = F816E68A2545D967004214D4 /* CoffeeMachine.swift */; };
+		F8B3DD7025483C7300AC35D6 /* grind.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F8B3DD6F25483C7300AC35D6 /* grind.mp3 */; };
+		F8B3DD80254841E700AC35D6 /* fillCoffeeCup.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F8B3DD7F254841E700AC35D6 /* fillCoffeeCup.mp3 */; };
+		F8B3DD832548431000AC35D6 /* fillWater.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F8B3DD822548431000AC35D6 /* fillWater.mp3 */; };
+		F8B3DD862548499A00AC35D6 /* groundsAppear.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F8B3DD852548499A00AC35D6 /* groundsAppear.mp3 */; };
+		F8B3DD8925484FF200AC35D6 /* clean.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F8B3DD8825484FF200AC35D6 /* clean.mp3 */; };
+		F8B3DD91254854B800AC35D6 /* fillBeans.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F8B3DD90254854B800AC35D6 /* fillBeans.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +31,13 @@
 		F816E67E2545D945004214D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F816E6812545D945004214D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F816E6832545D945004214D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F816E68A2545D967004214D4 /* CoffeeMachine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeMachine.swift; sourceTree = "<group>"; };
+		F8B3DD6F25483C7300AC35D6 /* grind.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = grind.mp3; sourceTree = "<group>"; };
+		F8B3DD7F254841E700AC35D6 /* fillCoffeeCup.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = fillCoffeeCup.mp3; sourceTree = "<group>"; };
+		F8B3DD822548431000AC35D6 /* fillWater.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = fillWater.mp3; sourceTree = "<group>"; };
+		F8B3DD852548499A00AC35D6 /* groundsAppear.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = groundsAppear.mp3; sourceTree = "<group>"; };
+		F8B3DD8825484FF200AC35D6 /* clean.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = clean.mp3; sourceTree = "<group>"; };
+		F8B3DD90254854B800AC35D6 /* fillBeans.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = fillBeans.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +70,30 @@
 		F816E6742545D944004214D4 /* CoffeeMachine */ = {
 			isa = PBXGroup;
 			children = (
+				F816E68D2545DEE8004214D4 /* Sound */,
 				F816E6752545D944004214D4 /* AppDelegate.swift */,
 				F816E6772545D944004214D4 /* SceneDelegate.swift */,
 				F816E6792545D944004214D4 /* ViewController.swift */,
+				F816E68A2545D967004214D4 /* CoffeeMachine.swift */,
 				F816E67B2545D944004214D4 /* Main.storyboard */,
 				F816E67E2545D945004214D4 /* Assets.xcassets */,
 				F816E6802545D945004214D4 /* LaunchScreen.storyboard */,
 				F816E6832545D945004214D4 /* Info.plist */,
 			);
 			path = CoffeeMachine;
+			sourceTree = "<group>";
+		};
+		F816E68D2545DEE8004214D4 /* Sound */ = {
+			isa = PBXGroup;
+			children = (
+				F8B3DD90254854B800AC35D6 /* fillBeans.mp3 */,
+				F8B3DD6F25483C7300AC35D6 /* grind.mp3 */,
+				F8B3DD8825484FF200AC35D6 /* clean.mp3 */,
+				F8B3DD7F254841E700AC35D6 /* fillCoffeeCup.mp3 */,
+				F8B3DD822548431000AC35D6 /* fillWater.mp3 */,
+				F8B3DD852548499A00AC35D6 /* groundsAppear.mp3 */,
+			);
+			path = Sound;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,7 +155,13 @@
 			files = (
 				F816E6822545D945004214D4 /* LaunchScreen.storyboard in Resources */,
 				F816E67F2545D945004214D4 /* Assets.xcassets in Resources */,
+				F8B3DD8925484FF200AC35D6 /* clean.mp3 in Resources */,
 				F816E67D2545D944004214D4 /* Main.storyboard in Resources */,
+				F8B3DD91254854B800AC35D6 /* fillBeans.mp3 in Resources */,
+				F8B3DD7025483C7300AC35D6 /* grind.mp3 in Resources */,
+				F8B3DD80254841E700AC35D6 /* fillCoffeeCup.mp3 in Resources */,
+				F8B3DD832548431000AC35D6 /* fillWater.mp3 in Resources */,
+				F8B3DD862548499A00AC35D6 /* groundsAppear.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,6 +175,7 @@
 				F816E67A2545D944004214D4 /* ViewController.swift in Sources */,
 				F816E6762545D944004214D4 /* AppDelegate.swift in Sources */,
 				F816E6782545D944004214D4 /* SceneDelegate.swift in Sources */,
+				F816E68B2545D967004214D4 /* CoffeeMachine.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,7 +332,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.yatsenko.CoffeeMachine;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -315,7 +351,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.yatsenko.CoffeeMachine;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};

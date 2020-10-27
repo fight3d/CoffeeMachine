@@ -1,24 +1,231 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="ipad10_2" orientation="portrait" layout="fullscreen" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CoffeeMachine" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="810" height="1080"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="water" translatesAutoresizingMaskIntoConstraints="NO" id="7yb-uh-cCe">
+                                <rect key="frame" x="436" y="860" width="508" height="473"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Milk" translatesAutoresizingMaskIntoConstraints="NO" id="PtR-p4-aCC">
+                                <rect key="frame" x="-26" y="860" width="408" height="473"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CoffeeMachine" translatesAutoresizingMaskIntoConstraints="NO" id="NnS-YA-Pki">
+                                <rect key="frame" x="0.0" y="0.0" width="810" height="1085"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Beam" translatesAutoresizingMaskIntoConstraints="NO" id="h7L-DZ-8Ra" userLabel="Bean03">
+                                <rect key="frame" x="165" y="102" width="46" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Beam" translatesAutoresizingMaskIntoConstraints="NO" id="UZK-rP-rg9" userLabel="Bean02">
+                                <rect key="frame" x="210" y="102" width="46" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Beam" translatesAutoresizingMaskIntoConstraints="NO" id="uP6-yZ-WRC" userLabel="Bean01">
+                                <rect key="frame" x="255" y="102" width="46" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="PowerGreen" translatesAutoresizingMaskIntoConstraints="NO" id="PUx-IY-CRY" userLabel="Power">
+                                <rect key="frame" x="240" y="327" width="47" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="awy-nB-psp">
+                                <rect key="frame" x="551" y="227" width="182" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="24"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="4"/>
+                                <state key="normal" title="Hot Water" backgroundImage="Button">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="prepareAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="n0c-1t-14j"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Prc-dN-hrS">
+                                <rect key="frame" x="551" y="291" width="182" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="24"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="4"/>
+                                <state key="normal" title="Americano" backgroundImage="Button">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="prepareAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RzV-I7-kxw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8TJ-eA-krn">
+                                <rect key="frame" x="551" y="354" width="182" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="24"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="4"/>
+                                <state key="normal" title="Latte" backgroundImage="Button">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="prepareAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZmH-8d-ZRK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XBa-eT-Yrc">
+                                <rect key="frame" x="346" y="354" width="182" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="24"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="4"/>
+                                <state key="normal" title="Cappuccino" backgroundImage="Button">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="prepareAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="89p-Xu-3mf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZWT-9V-p5z">
+                                <rect key="frame" x="346" y="291" width="182" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="24"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="4"/>
+                                <state key="normal" title="Espresso" backgroundImage="Button">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="prepareAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SqG-NU-XJv"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="C9C-Cq-8dS" userLabel="cupView">
+                                <rect key="frame" x="274" y="623" width="310" height="290"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Cup" translatesAutoresizingMaskIntoConstraints="NO" id="2DR-By-1gF">
+                                        <rect key="frame" x="53" y="60" width="256" height="228"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Coffee" translatesAutoresizingMaskIntoConstraints="NO" id="2Hp-gL-JTK">
+                                        <rect key="frame" x="78" y="-6" width="141" height="113"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fill ingridients" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q6U-SU-h14" userLabel="StatusLabel">
+                                <rect key="frame" x="105" y="206" width="415" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Fill" translatesAutoresizingMaskIntoConstraints="NO" id="Aaj-ac-uTD">
+                                <rect key="frame" x="377" y="623" width="85" height="94"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Grounds" translatesAutoresizingMaskIntoConstraints="NO" id="0kN-l5-SX8">
+                                <rect key="frame" x="119" y="627" width="614" height="344"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p5u-gX-MFV" userLabel="Clean">
+                                <rect key="frame" x="613" y="93" width="53" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="Clean"/>
+                                <connections>
+                                    <action selector="cleanButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PZs-5Y-CWP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q9p-MD-9Bc" userLabel="FillCoffeeButton">
+                                <rect key="frame" x="374" y="94" width="71" height="58"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="FillBeams"/>
+                                <connections>
+                                    <action selector="fillStockAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kqj-b7-Ota"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YD0-ep-NQS" userLabel="FillMilkButton">
+                                <rect key="frame" x="454" y="91" width="72" height="59"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="FillMilk"/>
+                                <connections>
+                                    <action selector="fillStockAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iyB-gQ-dxD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a88-5L-QTy" userLabel="FillWaterButton">
+                                <rect key="frame" x="531" y="91" width="72" height="59"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="FillWater"/>
+                                <connections>
+                                    <action selector="fillStockAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DEi-al-nPU"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Beam" translatesAutoresizingMaskIntoConstraints="NO" id="9EP-9g-euW" userLabel="Bean04">
+                                <rect key="frame" x="121" y="102" width="46" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JcB-Ok-Ddb" userLabel="HandleRotation">
+                                <rect key="frame" x="370" y="465" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="handle" translatesAutoresizingMaskIntoConstraints="NO" id="Njk-pE-Wu6">
+                                        <rect key="frame" x="14" y="-9" width="207" height="117"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <connections>
+                        <outlet property="cleanButton" destination="p5u-gX-MFV" id="YhY-A5-THa"/>
+                        <outlet property="coffeImageView" destination="2Hp-gL-JTK" id="Fxg-Ab-Sjo"/>
+                        <outlet property="cupImageView" destination="2DR-By-1gF" id="N2h-Bn-O56"/>
+                        <outlet property="cupWithCoffeeView" destination="C9C-Cq-8dS" id="wJ7-Fe-2dL"/>
+                        <outlet property="filImageView" destination="Aaj-ac-uTD" id="CvA-45-nqH"/>
+                        <outlet property="groundsImageView" destination="0kN-l5-SX8" id="7xi-QZ-1XI"/>
+                        <outlet property="handleRotationView" destination="JcB-Ok-Ddb" id="fCl-Ph-IQA"/>
+                        <outlet property="milkImageView" destination="PtR-p4-aCC" id="Z6N-xT-C5c"/>
+                        <outlet property="powerButton" destination="PUx-IY-CRY" id="PhX-cZ-lWA"/>
+                        <outlet property="statusLabel" destination="Q6U-SU-h14" id="9Au-bg-eHE"/>
+                        <outlet property="waterImageView" destination="7yb-uh-cCe" id="LjC-Db-3df"/>
+                        <outletCollection property="beamsCollection" destination="9EP-9g-euW" collectionClass="NSMutableArray" id="ALf-k5-0ne"/>
+                        <outletCollection property="beamsCollection" destination="h7L-DZ-8Ra" collectionClass="NSMutableArray" id="0v3-Rw-Zv0"/>
+                        <outletCollection property="beamsCollection" destination="UZK-rP-rg9" collectionClass="NSMutableArray" id="75d-Nz-fJc"/>
+                        <outletCollection property="beamsCollection" destination="uP6-yZ-WRC" collectionClass="NSMutableArray" id="wYm-GP-HLr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="137.77777777777777" y="120"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Beam" width="98" height="115"/>
+        <image name="Button" width="349" height="89"/>
+        <image name="Clean" width="97" height="110"/>
+        <image name="Coffee" width="337" height="195"/>
+        <image name="CoffeeMachine" width="1625" height="2160"/>
+        <image name="Cup" width="577" height="496"/>
+        <image name="Fill" width="34" height="143"/>
+        <image name="FillBeams" width="134" height="110"/>
+        <image name="FillMilk" width="143" height="116"/>
+        <image name="FillWater" width="143" height="116"/>
+        <image name="Grounds" width="1227" height="518"/>
+        <image name="Milk" width="499" height="977"/>
+        <image name="PowerGreen" width="73" height="70"/>
+        <image name="handle" width="433" height="155"/>
+        <image name="water" width="320" height="1068"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
